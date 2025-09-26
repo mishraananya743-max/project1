@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            overflow-x: hidden;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+            opacity: 0.5;
+        }
+
+        .content-overlay {
+            position: relative;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(at 50% -20%, hsla(218, 5%, 15%, 0.8) 0, #000 70%);
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen antialiased flex flex-col">
+
+    <video autoplay muted loop playsinline id="myVideo">
+        <source src="Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content-overlay w-full min-h-screen overflow-hidden">
+        <header class="flex items-center justify-between p-6 md:p-8 lg:p-10 z-10 relative">
+            <div class="text-white text-lg font-bold tracking-wide">
+                <span class="text-2xl">BMW World</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-gray-400 font-medium">
+                <a href="#" class="hover:text-white transition duration-300">Services</a>
+                <a href="#" class="hover:text-white transition duration-300">Pricing</a>
+                <a href="#" class="hover:text-white transition duration-300">About</a>
+                <a href="#" class="hover:text-white transition duration-300">Contact</a>
+            </nav>
+            <button class="hidden md:block border border-gray-600 rounded-full px-6 py-2 text-white text-sm font-medium hover:bg-gray-800 transition duration-300">
+                Get a quote
+            </button>
+        </header>
+
+        <main class="relative z-0">
+            <div class="flex flex-col items-center justify-center pt-24 pb-8 text-center px-4">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight tracking-tight max-w-4xl text-white">
+                    BMW World
+                </h1>
+                <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl font-light">
+                    Experience the prestige of a professionally detailed car, radiating elegance and refinement at every turn.
+                </p>
+                <a href="contact.html" class="mt-8 text-white flex items-center space-x-2 text-sm md:text-base font-medium transition duration-300 hover:text-gray-300">
+                    <span>Let's connect</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

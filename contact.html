@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Models</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .scrollable-content {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .scrollable-content::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Placeholder for future JavaScript functionality
+            // e.g., filtering logic, dynamic content loading
+        });
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
+
+    <!-- Main Content Grid -->
+    <div class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Left Sidebar -->
+        <aside class="col-span-1 p-6 bg-gray-800 rounded-lg shadow-md h-full sticky top-24 self-start hidden md:block">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-100">Discover and configure all BMW models.</h2>
+            <p class="text-gray-400 mb-8 text-sm leading-relaxed">
+                Explore our latest car models to find the smart technology, innovative features and engine type that's right for you. Simply compare, build and locate your perfect new BMW.
+            </p>
+
+            <!-- Categories Section -->
+            <div class="mb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-base font-semibold text-gray-200">Categories</h3>
+                    <svg class="w-4 h-4 text-gray-400 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        <span class="text-sm font-medium">SUV</span>
+                    </button>
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span class="text-sm font-medium">Sedan</span>
+                    </button>
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4L15 15zm0 0l5 5"></path></svg>
+                        <span class="text-sm font-medium">Coupé</span>
+                    </button>
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5C12 6.5 12 12.5 12 18.5M7 10h10M5 14h14M3 18h18M1 22h22"></path></svg>
+                        <span class="text-sm font-medium">Convertible</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Drivetrain Variants -->
+            <div class="mb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-base font-semibold text-gray-200">Drivetrain variants</h3>
+                    <svg class="w-4 h-4 text-gray-400 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span class="text-sm font-medium line-clamp-2 text-center">100% Electric</span>
+                    </button>
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        <span class="text-sm font-medium line-clamp-2 text-center">Plug-in Hybrid</span>
+                    </button>
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        <span class="text-sm font-medium line-clamp-2 text-center">Petrol</span>
+                    </button>
+                    <button class="flex flex-col items-center justify-center p-3 border border-gray-700 rounded-lg hover:border-blue-500 transition-colors">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span class="text-sm font-medium line-clamp-2 text-center">Diesel</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Content -->
+        <main class="col-span-1 md:col-span-3">
+            <!-- Full Electric Section -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-100">Full electric (5)</h3>
+                    <div class="relative">
+                        <select class="block appearance-none bg-gray-800 border border-gray-700 text-gray-200 rounded-lg py-2 px-4 pr-8 leading-tight focus:outline-none focus:bg-gray-800 focus:border-blue-500 text-sm">
+                            <option>Default</option>
+                            <option>Price Ascending</option>
+                            <option>Price Descending</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Car Card 1 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="download (1).jpg" alt="BMW iX" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV New</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">iX</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Electric</p>
+                            <p class="text-xs text-gray-400">From Rs.13,950,000 &copy;</p>
+                        </div>
+                    </div>
+
+                    <!-- Car Card 2 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="Screenshot 2025-09-22 223958.png" alt="BMW iX1 LWB" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">iX1 LWB</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Electric</p>
+                            <p class="text-xs text-gray-400">From Rs.4,990,000 &copy;</p>
+                        </div>
+                    </div>
+
+                    <!-- Car Card 3 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="i7.png" alt="BMW i7" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">Sedan</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">i7</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Electric</p>
+                            <p class="text-xs text-gray-400">From Rs.20,500,000 &copy;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plug-in Hybrid Section -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-100">Plug-in hybrid (2)</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Car Card 4 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="2d7a301b-ad82-4b62-8a58-f2da31fe6e53.jpg" alt="BMW XM" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">XM</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Hybrid</p>
+                            <p class="text-xs text-gray-400">From Rs.25,455,000 &copy;</p>
+                        </div>
+                    </div>
+                    <!-- Car Card 5 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="bmw m5.jpg" alt="BMW M5" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">Sedan</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">M5</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Hybrid</p>
+                            <p class="text-xs text-gray-400">From Rs.20,070,000 &copy;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Petrol Section -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-100">Petrol (13)</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Car Card 6 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="bmw x7.jpg" alt="BMW X7" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">X7</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Petrol</p>
+                            <p class="text-xs text-gray-400">From Rs.12,545,000 &copy;</p>
+                        </div>
+                    </div>
+                    <!-- Car Card 7 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="x5.jpg" alt="BMW X5" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">X5</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Petrol</p>
+                            <p class="text-xs text-gray-400">From Rs.9,360,000 &copy;</p>
+                        </div>
+                    </div>
+                    <!-- Car Card 8 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="x3.png" alt="BMW X3" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV New</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">X3</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Petrol</p>
+                            <p class="text-xs text-gray-400">From Rs.7,120,000 &copy;</p>
+                        </div>
+                    </div>
+                    <!-- Add more Petrol cards as needed based on the video content -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="x1.png" alt="BMW X1" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">X1</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Petrol</p>
+                            <p class="text-xs text-gray-400">From Rs.5,060,000 &copy;</p>
+                        </div>
+                    </div>
+                     <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="BMW Z4.jpg" alt="BMW Z4" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">SUV New</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">Z4</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                            <p class="text-sm text-blue-400 font-medium">Petrol</p>
+                            <p class="text-xs text-gray-400">From Rs.8,790,000 &copy;</p>
+                        </div>
+                    </div>
+                    <!-- ... more cards ... -->
+                </div>
+            </div>
+            
+            <!-- Diesel Section -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-100"></h3>
+                </div>
+                
+            </div>
+
+            <!-- Concept Cars Section -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-100">Concept cars (1)</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Concept Car Card 1 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="imgr.jpg" alt="BMW Vision M NEXT" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">Concept Car</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">BMW Vision M NEXT</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                        </div>
+                    </div>
+                    <!-- Add more concept cars as needed -->
+                </div>
+            </div>
+
+            <!-- Protection Vehicles Section -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-100">Protection vehicles (1)</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Protection Vehicle Card 1 -->
+                    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="7 proctect.jpg" alt="BMW The 7 Protection" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 left-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full font-medium">Protection Vehicle</div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-semibold text-gray-100">The 7 Protection</h4>
+                            <p class="text-sm text-gray-400 mb-2">Models</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+            <div>
+                <h4 class="font-semibold mb-4">Contact & Info</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">Customer support</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Assistance & Services</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">Book a Service Appointment</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Models</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">BMW X series</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
